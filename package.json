@@ -1,0 +1,23 @@
+{
+  "name": "civic-pulse-ai",
+  "version": "1.0.0",
+  "description": "CivicPulse AI - Autonomous Civic Grievance Triage & Municipal Resolution Agent System",
+  "private": true,
+  "scripts": {
+    "start": "python backend/run_backend.py",
+    "dev": "start.bat",
+    "build": "cd frontend && npm run build",
+    "test": "cd backend && python test_agent.py",
+    "install:all": "cd frontend && npm install"
+  },
+  "keywords": [
+    "govtech",
+    "civic-agent",
+    "municipal-corporation",
+    "ai-agent",
+    "pothole-detection",
+    "amc"
+  ],
+  "author": "CivicPulse AI Startup",
+  "license": "MIT"
+}

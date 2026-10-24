@@ -1,0 +1,12 @@
+services:
+  civic-pulse:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: civic-pulse-app
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    restart: unless-stopped
